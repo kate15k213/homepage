@@ -239,6 +239,80 @@ footer p {
   margin-bottom: 50px;
 }
 
+#contact {
+  background: url(../images/contact-bg.jpg);
+  min-height: 100vh;
+}
+
+/*フォーム*/
+form div {
+  margin-bottom: 14px;
+}
+label{
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+  background: rgba(255,255,255,.5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+input[type="text"],
+input[type="email"]{
+  width: 100%;
+  max-width: 240px;
+}
+textarea{
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type="submit"]{
+  border:none;
+  cursor: pointer;
+  line-height: 1;
+}
+/*店舗情報・地図*/
+#location{
+  padding: 4% 0;
+}
+#location .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.location-info{
+  width: 22%;
+}
+.location-info p{
+  padding: 12px 10px;
+}
+.location-map{
+  width: 74%;
+}
+/* ifreme */
+iframe{
+  width: 100%;
+}
+/* SNS */
+#sns{
+ background-color: #FAF7F0;
+ padding: 4% 0;
+}
+#sns .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#sns .sub-title{
+  margin-bottom: 30px;
+}
+.sns-box {
+  width: 30%;
+}
 @media(max-width: 600px){
   h1{
     color: #0bd;
@@ -305,5 +379,25 @@ footer p {
   /*MENU*/
   .menu-content{
     margin-top: 20%;
+  }
+  #contact .page-title{
+    margin-top: 40px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea{
+    max-width: 100%;
+  }
+  #location .wrapper,
+  #sns .wrapper{
+    flex-direction: column;
+  }
+  .location-info,
+  .location-map,
+  .sns-box{
+    width: 100%;
+  }
+  .sns-box{
+    margin-bottom: 30px;
   }
 }
